@@ -18,6 +18,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var myTiger = Tiger()
+        myTiger.age = 3
+        myTiger.name = "Laura"
+        myTiger.breed = "Bengalischer Tiger"
+        myTiger.image = UIImage(named: "BengalTiger.jpg")
+        
+        println("Mein Tiger heißt \(myTiger.name). Er ist ein \(myTiger.breed) und \(myTiger.age) Jahre alt. Sein Bild heißt \(myTiger.image)")
     }
 
     override func didReceiveMemoryWarning() {
